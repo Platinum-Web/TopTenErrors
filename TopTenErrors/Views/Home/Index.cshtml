@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">Top Ten Errors</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+
+        </p>
+    </div>
+</div>
+
+    
+
+
+
+<form asp-action="ReadTxtFiles" asp-controller="Home" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+
+        <label class="col-form-label-lg" for="TopTenTxtFiles">Upload Top Ten Txt Files</label>
+
+        <input id="TopTenTxtFiles" name="TopTenTxtFiles" class="form-control" type="file" multiple="multiple" />
+
+        <button type="submit" class="btn btn-primary btn-lg px-4 me-sm-3 mt-2">Download Top Ten Txt Files In Excel</button>
+
+    </div>
+
+</form>
